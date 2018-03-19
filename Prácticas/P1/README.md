@@ -7,7 +7,7 @@ sudo apt-get install apache2 mysql-server mysql-client
 
 Para comprobar como ha ido la instalación:
 
-apache2 -v
+apache2 -v 
 
 Como es necesario obtener la ip de las máquinas virtuales instalamos el paquete **net-tools** y así poder ejecutar **ifconfig** y obtener la ip de cada máquina virtual:
 
@@ -17,7 +17,7 @@ También se nos pide tener instalado ssh y curl, para ello instalamos:
 
 sudo apt install ssh sudo apt install curl
 
-Para comprobar que cURL funciona, vamos a hacerlo mediante un html ubicado en /var/www/html llamado hola.html con el siguiente contenido:
+Para comprobar que Curl funciona, vamos a hacerlo mediante un html ubicado en /var/www/html llamado hola.html con el siguiente contenido:
 
 *Esto funciona :)*
 
