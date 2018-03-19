@@ -29,7 +29,7 @@ Y podemos comprobar en la siguiente imagen que funciona:
 
 Y para mostrar que funciona correctamente el ssh conectamos una máquina a otra:
 
-![imagen]https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/sshOn.PNG)
+![imagen](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/sshOn.PNG)
 
 Práctica realizada por:
 
