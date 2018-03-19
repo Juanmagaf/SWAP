@@ -23,7 +23,7 @@ Para comprobar que Curl funciona, vamos a hacerlo mediante un html ubicado en /v
 
 Y podemos comprobar en la siguiente imagen que funciona:
 
-![https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/curlOn.PNG](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/curlOn.PNG)
+![curlOn.PNG](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/curlOn.PNG)
 
 ![2](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/curlOn1.PNG)
 
