@@ -23,13 +23,13 @@ Para comprobar que Curl funciona, vamos a hacerlo mediante un html ubicado en /v
 
 Y podemos comprobar en la siguiente imagen que funciona:
 
-![imagen](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/curlOn.PNG)
+![imagen](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P1/curlOn.PNG)
 
-![imagen](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/curlOn1.PNG)
+![imagen](https://github.com/Juanmagaf/SWAP/tree/master/Pr%C3%Acticas/P1/curlOn1.PNG)
 
 Y para mostrar que funciona correctamente el ssh conectamos una máquina a otra:
 
-![imagen](https://github.com/Juanmagaf/SWAP/tree/master/Prácticas/P1/sshOn.PNG)
+![imagen](https://github.com/Juanmagaf/SWAP/tree/master/Pr%C3%Acticas/P1/sshOn.PNG)
 
 Práctica realizada por:
 
