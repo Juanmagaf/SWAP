@@ -30,7 +30,7 @@ Una vez tenemos hecho esto, ya podemos usar *rsync*:
 
 **rsync -avz -e ssh 192.167.175.131:/var/www/ /var/www/**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica2/usorsync.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Prácticas/Practica2/usorsync.PNG)
 
 Una vez comprobado que funciona, ahora vamos a generar la clave ssh para que así
 la máquina secundaria pueda acceder sin tener que introducir la contraseña en
