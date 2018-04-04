@@ -28,7 +28,7 @@ no exista lo creamos, y si existe borramos todo su contenido:
 Tras acceder al archivo de configuración y haber borrado su contenido, añadimos
 la configuración que se puede ver en la siguiente imagen:
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/nginxconf.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/nginxconf.PNG)
 
 Como se puede ver hemos añadido diferentes pesos a las máquinas, para que así una
 de ellas reciba más carga de trabajo que otra, cosa que es útil si disponemos de
@@ -43,7 +43,7 @@ de *Nginx*, y se trata del archivo /etc/nginx/nginx.conf
 Y comentamos la línea **include /etc/nginx/sites-enabled/*;** para que así
 funcione como un balanceador web.
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/nginxconf2.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/nginxconf2.PNG)
 
 Una vez hecho esto iniciamos nginx:
 
@@ -61,7 +61,7 @@ Una vez hemos hecho desde una cuarta máquina ejecuamos la línea:
 
 Para así mostrar que está configurado correctamente.
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/pruebaABNginx.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/pruebaABNginx.PNG)
 
 Tras comprobar que *Nginx* funciona correctamente, procedemos a instalar *Haproxy*,
 para ello en una nueva máquina, dado que sino tendriamos que apagar *Nginx* puesto
@@ -82,7 +82,7 @@ Obtenemos nuestra dirección IP con **ifconfig** y editamos el archivo de config
 Tras acceder borramos todo el contenido que contenga este archivo y lo dejamos
 como en la siguiente imagen:
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/haproxycfg.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/haproxycfg.PNG)
 
 Una vez hemos terminado la configuración, procedemos a iniciar *Haproxy*:
 
@@ -96,7 +96,7 @@ Por último sólo queda comprobar su funcionamiento ejecutando ab como con *Ngin
 
 **ab -n 1000 -c 10 http://192.168.175.133/index.html**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/pruebaABHaproxy.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/pruebaABHaproxy.PNG)
 
 Por último como adicional hemos instalado el balanceador *Pound*, para ello en
 una nueva máquina hemos instalado *Pound* con la siguiente orden:
@@ -115,7 +115,7 @@ la otra máquina, y además hemos añadido prioridades a cada máquina para así
 simuar el mismo caso que si tuviéramos dos máquinas distintas, siendo una de
 ellas más potente que otra, quedando como en la siguiente imagen:
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/poundcfg.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/poundcfg.PNG)
 
 Una vez hecho esto procedemos a iniciar *Pound*, para ello primero modificamos
 el siguiente archivo:
@@ -124,8 +124,8 @@ el siguiente archivo:
 
 E igualamos startup a 1:
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/poundiniciar.PNG)
-
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/poundiniciar.PNG)
+P3
 Una vez actualizado iniciamos el servicio con:
 
 **sudo /etc/init.d/pound start**
@@ -136,7 +136,7 @@ otra máquina ab:
 
 **ab -n 1000 -c 10 http://192.168.175.134/index.html**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica3/pruebaABPound.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P3/pruebaABPound.PNG)
 
 
 Para ayudarnos en la configuración de *Pound* hemos seguido el siguiente [enlace](https://help.ubuntu.com/community/Pound)

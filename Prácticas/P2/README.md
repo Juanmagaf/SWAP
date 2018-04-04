@@ -30,7 +30,7 @@ Una vez tenemos hecho esto, ya podemos usar *rsync*:
 
 **rsync -avz -e ssh 192.167.175.131:/var/www/ /var/www/**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Prácticas/Practica2/usorsync.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Prácticas/P2/usorsync.PNG)
 
 Una vez comprobado que funciona, ahora vamos a generar la clave ssh para que así
 la máquina secundaria pueda acceder sin tener que introducir la contraseña en
@@ -38,13 +38,13 @@ cada acceso. Generamos la clave:
 
 **ssh-keygen -b 4096 -r rsa**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica2/keygen2.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P2/keygen2.PNG)
 
 Desde la máquina secundaria copiamos la clave:
 
 **ssh-copy-id 192.168.175.131**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica2/pswcopiada.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P2/pswcopiada.PNG)
 
 Y una vez hecho esto ya accedemos con ssh:
 
@@ -56,7 +56,7 @@ podemos añadir comandos bash para que se ejecuten:
 **ssh 192.168.175.131 uname -a**
 **ssh 192.168.175.131 ls /var/www/**
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica2/sshcomandos.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P2/sshcomandos.PNG)
 
 Lo último que queda por hacer es que la máquina secundaria haga el *rsync* con
 una tarea cron, y para ello tenemos que editar el archivo */etc/crontab*:
@@ -69,7 +69,7 @@ Y añadimos:
 
 Una vez añadimos la línea, el fichero quedaría:
 
-![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/Practica2/crontab.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Pr%C3%A1cticas/P2/crontab.PNG)
 
 
 Guardamos y ya está en funcionamiento la tarea cron.
