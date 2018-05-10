@@ -20,7 +20,7 @@ los distintos tipos de hosting web que existen.
 
 ## Tipos de Hosting Web
 
-![Image](https://github.com/AlArgente/SWAP1718/blob/master/Trabajo/TiposHosting.PNG)
+![Image](https://github.com/Juanmagaf/SWAP/blob/master/Trabajo/TiposHosting.PNG)
 
 ## Compartido
 
