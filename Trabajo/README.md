@@ -80,3 +80,9 @@ Vesta CP es un panel de control de código abierto completamente gratuito, scrip
 Vesta CP usa Apache y Nginx juntos. Nginx actúa como un frontend (“Proxy”) y sirve para todo contenido estático. Cualquier contenido dinámico se pasará a Apache y se gestionará desde el mismo. El resultado es un uso del servidor  súper rápido y ram bajo que saca provecho de los dos puntos fuertes del servidor web.
 
 Ofrece una excelente herramienta webmail llamada RoundCube. Con ella puedes organizar varios paquetes de hosting en VestaCP y clasificar a tus clientes. Se trata de una característica estable, que es actualizada continuamente para el beneficio de los usuarios.
+
+Trabajo realizado por:
+
+[Alberto Argente del Castillo Garrido](https://github.com/AlArgente/SWAP)
+
+[Juan Manuel González-Aurioles Fernández](https://github.com/Juanmagaf/SWAP)
